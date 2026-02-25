@@ -224,7 +224,7 @@ export default function App(){
             <div>
               <div style={{fontSize:11,color:T.gold,fontWeight:700,textTransform:'uppercase',letterSpacing:'1.2px',marginBottom:3}}>Kementerian Keuangan Republik Indonesia</div>
               <h1 style={{fontWeight:800,fontSize:19,letterSpacing:'-.3px',margin:0,color:T.text,lineHeight:1.2}}>Dashboard Kalender Pembelajaran 2026</h1>
-              <div style={{fontSize:11,color:T.textMuted,marginTop:2}}>Pusat Pendidikan dan Pelatihan Anggaran &amp; Perbendaharaan · BPPK</div>
+              <div style={{fontSize:11,color:T.textMuted,marginTop:2}}>Pusat Pendidikan dan Pelatihan Anggaran &amp; Perbendaharaan </div>
             </div>
           </div>
           <div className="np" style={{display:'flex',gap:10,alignItems:'center'}}>
@@ -239,7 +239,7 @@ export default function App(){
         </div>
         <div style={{height:1,background:`linear-gradient(90deg,transparent,${T.gold}50,transparent)`}}/>
         <div style={{padding:'7px 28px',background:isDark?'rgba(0,0,0,0.18)':'rgba(0,48,135,0.03)',display:'flex',alignItems:'center',gap:16,flexWrap:'wrap'}}>
-          {['📅 Tahun Anggaran 2026','📍 Jakarta, Indonesia','🏛 Badan Pendidikan dan Pelatihan Keuangan (BPPK)'].map((item,i)=>(
+          {['📅 Tahun Anggaran 2026',].map((item,i)=>(
             <span key={i} style={{display:'flex',alignItems:'center',gap:i>0?16:0}}>
               {i>0&&<span style={{color:T.border,marginRight:16}}>|</span>}
               <span style={{fontSize:11,color:T.textMuted}}>{item}</span>
@@ -270,7 +270,7 @@ export default function App(){
         {/* KPIs */}
         <div className="kr" style={{display:'flex',gap:16,marginBottom:24,flexWrap:'wrap'}}>
           <KPICard label="Total Peserta" value={totalPeserta} colorKey="gold" icon="👥" bgChar="P" delay={0.05} T={T} isDark={isDark}/>
-          <KPICard label="Total Jamlat" value={totalJamlat} colorKey="teal" icon="⏱" bgChar="J" delay={0.10} T={T} isDark={isDark}/>
+          <KPICard label="Total Jamlator" value={totalJamlat} colorKey="teal" icon="⏱" bgChar="J" delay={0.10} T={T} isDark={isDark}/>
           <KPICard label="Total Pelatihan" value={totalPelatihan} colorKey="blue" icon="📋" bgChar="T" delay={0.15} T={T} isDark={isDark}/>
         </div>
 

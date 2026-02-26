@@ -374,7 +374,7 @@ export default function App() {
             <div>
               <div style={{fontSize:11,color:th.gold,fontWeight:700,textTransform:'uppercase',letterSpacing:'1.2px',marginBottom:3}}>Kementerian Keuangan Republik Indonesia</div>
               <h1 style={{fontWeight:800,fontSize:19,letterSpacing:'-.3px',margin:0,color:th.text,lineHeight:1.2}}>Dashboard Kalender Pembelajaran 2026</h1>
-              <div style={{fontSize:11,color:th.textMuted,marginTop:2}}>Pusat Pendidikan dan Pelatihan Anggaran &amp; Perbendaharaan · BPPK</div>
+              <div style={{fontSize:11,color:th.textMuted,marginTop:2}}>Pusat Pendidikan dan Pelatihan Anggaran &amp; Perbendaharaan</div>
             </div>
           </div>
           <div className="np" style={{display:'flex',gap:10,alignItems:'center',flexWrap:'wrap'}}>
@@ -390,7 +390,7 @@ export default function App() {
         </div>
         <div style={{height:1,background:`linear-gradient(90deg,transparent,${th.gold}55,transparent)`}}/>
         <div style={{padding:'7px 28px',background:theme==='light'?'rgba(0,48,135,0.03)':'rgba(0,0,0,0.18)',display:'flex',alignItems:'center',gap:0,flexWrap:'wrap'}}>
-          {['📅 Tahun Anggaran 2026','📍 Jakarta, Indonesia','🏛 Badan Pendidikan dan Pelatihan Keuangan (BPPK)'].map((item,i)=>(
+          {['📅 Tahun Anggaran 2026'].map((item,i)=>(
             <span key={i} style={{display:'flex',alignItems:'center'}}>
               {i>0&&<span style={{color:th.border,margin:'0 14px'}}>|</span>}
               <span style={{fontSize:11,color:th.textMuted}}>{item}</span>
@@ -421,7 +421,7 @@ export default function App() {
         {/* KPIs */}
         <div className="kr" style={{display:'flex',gap:16,marginBottom:24,flexWrap:'wrap'}}>
           <KPICard label="Total Peserta"   value={totalPeserta}   colorKey="gold" icon="👥" bgChar="P" delay={0.05} theme={theme}/>
-          <KPICard label="Total Jamlat"    value={totalJamlat}    colorKey="teal" icon="⏱" bgChar="J" delay={0.10} theme={theme}/>
+          <KPICard label="Total Jamlator"    value={totalJamlat}    colorKey="teal" icon="⏱" bgChar="J" delay={0.10} theme={theme}/>
           <KPICard label="Total Pelatihan" value={totalPelatihan} colorKey="blue" icon="📋" bgChar="T" delay={0.15} theme={theme}/>
         </div>
 
@@ -458,7 +458,7 @@ export default function App() {
 
         {/* PEAK SEASON CHART — full width */}
         <div style={{marginBottom:16}}>
-          <ChartCard title="Peak Season & Low Season Pelatihan" subtitle="Frekuensi jumlah program per bulan — merah = peak · biru = low · abu = normal" wide theme={theme} accent>
+          <ChartCard title="Peak Season & Low Season Pelatihan" subtitle="Frekuensi jumlah program per bulan" wide theme={theme} accent>
             <PeakSeasonChart data={monthlyData} theme={theme}/>
           </ChartCard>
         </div>

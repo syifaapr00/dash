@@ -364,7 +364,7 @@ export default function App(){
         </div>
         <div style={{height:1,background:`linear-gradient(90deg,transparent,${th.gold}55,transparent)`}}/>
         <div style={{padding:'7px 28px',background:theme==='light'?'rgba(0,48,135,0.03)':'rgba(0,0,0,0.18)',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
-          {['📅 Tahun Anggaran 2026','📍 Jakarta, Indonesia','🏛 Badan Pendidikan dan Pelatihan Keuangan (BPPK)'].map((item,i)=>(
+          {['📅 Tahun Anggaran 2026'].map((item,i)=>(
             <span key={i} style={{display:'flex',alignItems:'center'}}>
               {i>0&&<span style={{color:th.border,margin:'0 14px'}}>|</span>}
               <span style={{fontSize:11,color:th.textMuted}}>{item}</span>
@@ -502,7 +502,7 @@ export default function App(){
             </ResponsiveContainer>
           </ChartCard>
 
-          <ChartCard title="Peak Season & Low Season Pelatihan" subtitle="Frekuensi program per bulan — 🔥 peak  ·  ❄️ low  ·  normal" wide accent th={th}>
+          <ChartCard title="Peak Season & Low Season Pelatihan" subtitle="Frekuensi program per bulan —  peak  ·   low  ·  normal" wide accent th={th}>
             <PeakSeasonChart data={monthlyData} th={th}/>
           </ChartCard>
 
